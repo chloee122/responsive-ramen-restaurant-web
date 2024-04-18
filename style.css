@@ -23,6 +23,7 @@ img {
   display: flex;
   /* border: 1px solid black; */
   justify-content: space-between;
+  background-color: whitesmoke;
 
   /* background-color: #ac2930; */
   /* overflow: hidden; */
@@ -47,12 +48,13 @@ img {
 }
 
 .header__logo h1 {
-  color: white;
+  /* color: white; */
+  color: black;
   font-size: 35px;
 }
 
 .header__logo-overlay {
-  background-color: #ac2930;
+  /* background-color: #ac2930; */
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -168,4 +170,24 @@ a {
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
+}
+
+/* About Us */
+.about-us {
+  height: 80vh;
+}
+.about-us__image {
+  width: 60%;
+  height: 60%;
+  float: right;
+}
+
+.about-us__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-us__content {
+  width: 40%;
 }

@@ -7,7 +7,6 @@
 
 body {
   background-color: #fff0de;
-  /* width: 90%; */
   margin: 0 auto;
 }
 
@@ -17,25 +16,20 @@ img {
   display: block;
 }
 
+/* ================================= */
 /* Header */
 
 .header__nav {
   display: flex;
-  /* border: 1px solid black; */
   justify-content: space-between;
-  background-color: whitesmoke;
-
-  /* background-color: #ac2930; */
-  /* overflow: hidden; */
-  /* position: fixed;
-  top: 0;
-  width: 80%; */
+  background-color: white;
+  /* border-bottom: 0.5px solid black; */
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
 
 .header__logo {
   width: 30%;
   padding: 0.5rem;
-  /* border: 1px solid black; */
   position: relative;
   display: flex;
   align-items: center;
@@ -48,17 +42,8 @@ img {
 }
 
 .header__logo h1 {
-  /* color: white; */
-  color: black;
+  color:black;
   font-size: 35px;
-}
-
-.header__logo-overlay {
-  /* background-color: #ac2930; */
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  inset: 0;
 }
 
 .header__menu li {
@@ -69,71 +54,65 @@ img {
 .header__menu li,
 a {
   text-decoration: none;
-  color: black;
+  color: black
 }
 
 .header__menu {
-  /* border: 2px solid black; */
   display: flex;
   gap: 3rem;
   align-items: center;
   padding: 0.5rem;
-  /* flex: 1.22; */
   width: 60%;
   justify-content: flex-end;
   padding-right: 100px;
 }
 
+.logo{
+  background-color: #ac2930;
+  border-radius: 100%;
+  padding: 5px 12px;
+}
+
+/* ============================================= */
 /* Hero */
 .hero {
   display: flex;
-  max-height: 65vh;
   justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 3rem auto;
 }
 
 .hero-image {
-  /* flex: 1; */
-  width: 30%;
-  /* height:  */
-  position: relative;
-  padding-bottom: 20px;
-  padding-left: 50px;
+  width: 40%;
+  height: 80vh;
 }
 
 .hero-image img {
-  width: 150%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.hero-image__overlay {
-  position: absolute;
-  z-index: -1;
   width: 100%;
-  /* background-color: #b1454a; */
-  background-color: #ac2930;
-  inset: 0;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-content {
-  /* flex: 1.2; */
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5rem;
+  padding-left: 3rem;
+  text-align: center;
+  gap: 3rem;
+  /* border-bottom: 0.1px solid gray; */
+  /* border-right: 0.1px solid gray; */
 }
 
 .hero-content__info {
-  /* padding: 20px; */
   width: 90%;
+  margin: 0 auto;
 }
 
 .hero-content__info h1 {
   font-size: 5vw;
   margin-bottom: 30px;
-  /* line-height: 100px; */
-  /* padding: 32px 32px 32px 0; */
 }
 
 .hero-content__info h4 {
@@ -143,12 +122,10 @@ a {
 
 .hero-content__info p {
   font-size: 1.2vw;
-  /* line-height: 20px; */
-  /* font-weight: 400; */
 }
 
-.hero-content__order-btn {
-  background-color: black;
+.hero-content__menu-btn {
+  background-color: orange;
   color: white;
   border-radius: 30px;
   padding: 20px;
@@ -160,34 +137,187 @@ a {
   cursor: pointer;
 }
 
-.hero-content__populars-btn {
-  background-color: orange;
-  color: white;
-  border-radius: 30px;
-  padding: 20px;
-  min-width: 212px;
-  border: none;
+/* =============================== */
+/* About Us */
+
+.about-us {
+  padding: 5rem 0;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 40px;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #ac2930;
+  color: #fff0de;
+  /* color: white; */
+}
+
+.about-us__content h1{
+  font-size: 3vw;
+  /* color: black; */
+  /* color: #fff0de; */
+  /* margin-bottom: 10px; */
+
+}
+
+.subtitle{
+  color:black;
+  font-size: 2.2vw;
   font-weight: bold;
-  font-size: 15px;
+  margin-bottom: 10px;
+}
+.signature__subtitle{
+  color: #ac2930;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* ================ Signature ====================*/
+.signature{
+  margin: 3rem 0;
+}
+
+.signature__container{
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.signature__card {
+  background-color:hsl(19, 100%, 97%);
+  padding-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 6px;
+  border-radius: 1rem;
+  text-align: center;
+  width: 85%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* border: 5px solid green; */
+}
+
+.signature__title{
+  font-size: 3vw;
+  text-align: center;
+}
+
+.signature__subtitle {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.signature__image {
+  height: 75%;
+  /* border: 5px solid green; */
+}
+
+.signature__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* ============= Newsletter ============= */
+.newsletter {
+  min-height: 50vh;
+  width:90%;
+  background-color: #ac2930;
+  /* background-image:  
+  linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+  ),url(newsletter3.jpg); */
+  background-position: bottom;
+  margin: 0 auto ;
+  background-size: cover;
+  /* opacity: 0.8; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter h2{
+  color: #fff0de;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.newsletter p{
+  color: white;
+}
+
+.newsletter__form {
+  min-width: 480px;
+  margin-top: 40px;
+
+  padding: 14px 14px 14px 24px;
+
+  display: flex;
+  gap: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 46px;
+}
+
+.newsletter__form input {
+  flex: 1;
+
+  font-size:  16px;
+  font-weight: 400px;
+  font-family: var(--plus-jakarta-sans);
+
+  color: #fff;
+  opacity: 0.5;
+
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.newsletter__form input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.newsletter__form button {
+  padding: 20px;
+
+  min-width: 180px;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+
+  background: orange;
+  border-radius: 46px;
+  border: none;
+  outline: none;
+
   cursor: pointer;
 }
 
-/* About Us */
-.about-us {
-  height: 80vh;
-}
-.about-us__image {
-  width: 60%;
-  height: 60%;
-  float: right;
-}
-
-.about-us__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+/*  */
+@media screen and (min-width: 1024px){
+  .signature__container{
+    gap: 3rem;
+  }
+  .signature__card {
+    width: 20%;
+    height: 50vh;
+    gap: 0.5rem
+  }
 }
 
-.about-us__content {
-  width: 40%;
-}
+

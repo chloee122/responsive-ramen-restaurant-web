@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #fff0de;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* ================================= */
+  /* Header */
+  
+  .container {
+    
+    position: sticky;
+    top:0;
+  }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    /* border-bottom: 0.5px solid black; */
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+   
+    
+  }
+  
+  .header__logo {
+    width: 30%;
+    padding: 0.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 100px;
+  }
+  
+  .header__logo p {
+    font-size: 40px;
+  }
+  
+  .header__logo h1 {
+    color:black;
+    font-size: 35px;
+  }
+  
+  .header__menu li {
+    list-style-type: none;
+    font-weight: bold;
+  }
+  
+  .header__menu li,
+  a {
+    text-decoration: none;
+    color: black
+  }
+  
+  
+  .header__menu {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 0.5rem;
+    width: 60%;
+    justify-content: flex-end;
+    padding-right: 100px;
+  }
+  
+  .logo{
+    background-color: #ac2930;
+    border-radius: 100%;
+    padding: 5px 12px;
+  }
+
+  /* ============= Footer =============== */
+.footer {
+    background-color: black;
+    margin-top: 3rem ;
+    padding: 50px 120px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .address__title, .hours__title, .social__title{
+    margin-bottom: 8px;
+  }
+  
+  .social__icons {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  table, td, th {
+    border: 1px solid black
+  }
+
+  td, th{
+    padding: 8px;
+  }
+
+  table {
+    width: 45%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .menu__title {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .menu__subtitle{
+    color: #ac2930;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+
+  
+.dish{
+  width: 25%;
+}
+
+tr {
+  height: 60px;
+}
+ 
+.price{
+  width: 12%
+}
+
+.table__header{
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.table__headings {
+  background-color: #ac2930;
+  color:#fff0de;
+}
+
+.dish__name{
+  font-weight: bold;
+}

@@ -19,11 +19,10 @@ img {
 /* ================================= */
 /* Header */
 
-.container {
+.header {
   position: sticky;
   top: 0;
 }
-
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -82,10 +81,17 @@ a {
 .footer {
   background-color: black;
   margin-top: 3rem;
-  padding: 50px 120px;
+  padding: 50px 50px;
   color: white;
   display: flex;
   justify-content: space-between;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 0.5fr;
+  gap: 2rem;
+  align-items: start;
 }
 
 .address__title,
@@ -97,65 +103,76 @@ a {
 .social__icons {
   display: flex;
   margin-top: 10px;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   font-size: 25px;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+/* ================ Contact =================== */
+.main {
+  width: 90%;
+  /* border: 2px solid #ac2930; */
+  margin: 0 auto;
+}
+
+.main img {
+  height: 30vh;
+  object-fit: cover;
+  /* opacity: 0.9; */
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-table,
-td,
-th {
-  border: 1px solid black;
+input[type="submit"]:hover {
+  background-color: orange;
 }
 
-td,
-th {
-  padding: 8px;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-table {
-  width: 45%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  text-align: center;
+.container {
+  border-radius: 30px;
+
+  background-color: #ac2930;
+  padding: 40px;
+  width: 60%;
+  color: white;
 }
 
-.menu__title {
+h3 {
   font-size: 3vw;
   text-align: center;
   margin-top: 30px;
 }
 
-.menu__subtitle {
+.contact__subtitle {
   color: #ac2930;
   text-align: center;
   font-size: 2.5vw;
   font-weight: 900;
   margin-bottom: 10px;
-}
-
-.dish {
-  width: 25%;
-}
-
-tr {
-  height: 60px;
-}
-
-.price {
-  width: 12%;
-}
-
-.table__header {
-  text-align: center;
-  margin: 40px 0 20px 0;
-}
-
-.table__headings {
-  background-color: #ac2930;
-  color: #fff0de;
-}
-
-.dish__name {
-  font-weight: bold;
 }

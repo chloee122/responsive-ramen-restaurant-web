@@ -19,7 +19,7 @@ img {
 /* ================================= */
 /* Header */
 
-.container {
+/* .container {
   position: sticky;
   top: 0;
 }
@@ -28,18 +28,17 @@ img {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  /* border-bottom: 0.5px solid black; */
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 .header__logo {
   width: 30%;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem;
   position: relative;
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding-left: 100px;
+  padding-left: 4rem;
 }
 
 .header__logo p {
@@ -76,16 +75,18 @@ a {
   background-color: #ac2930;
   border-radius: 100%;
   padding: 5px 12px;
-}
+} */
 
 /* ============= Footer =============== */
-.footer {
+/* .footer {
   background-color: black;
   margin-top: 3rem;
-  padding: 50px 120px;
+  padding: 60px 50px 60px 70px;
   color: white;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  gap: 2rem;
+  align-items: start;
 }
 
 .address__title,
@@ -100,6 +101,107 @@ a {
   justify-content: space-evenly;
   font-size: 25px;
   cursor: pointer;
+} */
+/* ========== Header ============ */
+  
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #ffffff;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.header__logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ac2930;
+}
+
+.header__links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  padding: 16px 0;
+}
+
+.header__logo p {
+  font-size: 40px;
+  padding: 2px 10px;
+}
+
+.header__logo h1 {
+  color: white;
+  font-size: 35px;
+}
+
+.header__links li, a {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+}
+
+/* ========== Footer ============ */
+
+.footer {
+  background-color: black;
+  margin-top: 48px;
+  padding: 40px 30px 40px 40px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  row-gap: 2rem;
+  align-items: start;
+}
+
+.address__title,
+.hours__title,
+.social__title {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.social__icons {
+  display: flex;
+  margin-top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  gap: 1rem;
+}
+/* ========== Menu ============ */
+
+.menu-heading__title {
+  font-size: 42px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-heading__subtitle {
+  color: #ac2930;
+  text-align: center;
+  font-size: 29px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.menu-tables{
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin: 10px auto 40px auto;
+  border-collapse: collapse;
 }
 
 table,
@@ -113,49 +215,105 @@ th {
   padding: 8px;
 }
 
-table {
-  width: 45%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  text-align: center;
-}
-
-.menu__title {
-  font-size: 3vw;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.menu__subtitle {
-  color: #ac2930;
-  text-align: center;
-  font-size: 2.5vw;
-  font-weight: 900;
-  margin-bottom: 10px;
-}
-
 .dish {
   width: 25%;
-}
-
-tr {
-  height: 60px;
 }
 
 .price {
   width: 12%;
 }
 
-.table__header {
-  text-align: center;
-  margin: 40px 0 20px 0;
+tr {
+  height: 60px;
 }
 
-.table__headings {
+tr {
+  background-color: white;
+}
+
+.table-headings {
   background-color: #ac2930;
-  color: #fff0de;
+  color:white;
 }
 
-.dish__name {
+.dish-name {
   font-weight: bold;
 }
+
+
+@media screen and (min-width: 1024px) {
+  /* ========== Header ============ */
+  .header__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+  }
+      
+  .header__logo {
+        width: 40%;
+        padding: 8px 8px 8px 72px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+        background-color: white;
+  }
+      
+  .header__logo p {
+        background-color: #ac2930;
+        border-radius: 100%;
+        padding: 5px 12px;
+  }
+      
+  .header__logo h1 {
+        color: black;
+        font-size: 35px;
+  }
+      
+  .header__links li, a {
+        list-style-type: none;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+  }
+      
+  .header__links {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        padding: 0.5rem;
+        width: 60%;
+        justify-content: flex-end;
+        padding-right: 72px;
+  }
+      
+  /* ========== Footer ============ */
+  .footer {
+          padding: 60px 50px 60px 80px;
+          grid-template-columns: 1.2fr 1.2fr 1fr 0.5fr;
+          gap: 2rem;
+  }
+      
+  /* ========== Contact ============ */
+  .main {
+          width: 90%;
+          margin: 0 auto;
+  }
+      
+  .contact-form {
+          width: 60%;
+          padding: 40px;
+  }
+        
+  textarea {
+          height: 200px;
+  }
+
+  /* =========== Menu ============= */
+
+  table {
+    width: 50%;
+  }
+}
+

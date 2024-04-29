@@ -14,7 +14,7 @@
     <header class="header">
       <nav class="header__nav">
         <div class="header__logo">
-          <p>🍜</p>
+          <div class="icon">🍜</div>
           <h1>Shoya Ramen</h1>
         </div>
         <ul class="header__links">
@@ -22,7 +22,11 @@
             <a href="#">HOME</a>
           </li>
           <li>
-            <a href="http://127.0.0.1:5500/index.html#about-us">ABOUT US</a>
+            <!-- <a href="http://127.0.0.1:5500/index.html#about-us">ABOUT US</a> -->
+            <a
+              href="https://chloeng12.github.io/imaginary-shop/index.html#about-us"
+              >ABOUT US</a
+            >
           </li>
           <li>
             <a href="menu.html">MENU</a>
@@ -36,67 +40,75 @@
     <main class="home-main">
       <section class="hero">
         <div class="hero__image">
-          <img src="about-us.jpg" alt="banner image" />
+          <img src="images/banner.jpg" alt="ramen banner" />
         </div>
         <div class="hero__content">
           <div class="hero-content__text">
             <h1>Enjoy The Best Japanese Ramen In Town</h1>
-            <h2>Thick creamy broth with thin noodles...and friends</h2>
-            <p>
-              We proudly serve authentic ramen since 2018. We proudly serve
-              authentic ramen since 2018
-            </p>
+
+            <h2>
+              Thick, creamy broth with thin noodles and delicious toppings. We
+              bring authentic flavors that transport you straight to the
+              bustling streets of Tokyo.
+            </h2>
+
+            <p>Visit us: Ratapihantie 13, 00520 Helsinki</p>
           </div>
 
-          <a href="menu.html" class="hero-content__link">
-            <button class="menu-btn">Menu</button>
-          </a>
+          <div class="hero-content__btn">
+            <!-- <button class="menu-btn"> -->
+            <a href="menu.html" class="menu-btn__link">Menu</a>
+            <!-- </button> -->
+          </div>
         </div>
       </section>
 
       <section class="about-us" id="about-us">
         <div class="about-us__content">
           <h1 class="about-us-title">About us</h1>
-          <p class="about-us-subtitle">わたしたちについて</p>
+          <h2 class="about-us-subtitle">わたしたちについて</h2>
           <p class="about-us-text">
-            Located in the Ruoholahti district of Helsinki, Be My Guest serves
-            authentic Vietnamese food since 2019. We bring you healthy, fresh
-            and exciting lunch and dinner in an ambience resembling a cosy
-            living room. From noodles, dumplings and Pho to funky drinks, let's
-            reimagine the subtle taste of Asian food in Helsinki! Olemme
-            vietnamilainen ravintola ja sijaintimme on Ruoholahti, Helsinki.
-            Tarjoamme aitoa vietnamilaista ruokaa - terveellistä, tuoretta ja
-            aistikasta, joka avaa aasialaisen ruuan mahdollisuuksien maailman
-            uudella herkullisella tavalla; nuudelli, wings, dumpling tai Pho
-            saavat uuden ulottuvuuden. Maistuvalta juomalistalta löytyy myös
-            virkistäviä seuralaisia ruuallesi.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+            accusantium, ipsam sint quas dolorem enim nisi sit neque aut commodi
+            minima tenetur eaque necessitatibus nihil quis autem qui laudantium
+            quam! Maxime, exercitationem eveniet quis repellendus id ea beatae,
+            accusamus voluptatem magnam. Veniam atque ratione, eum fuga minus
+            suscipit possimus ipsam, rerum recusandae distinctio quibusdam.
+          </p>
+          <p class="about-us-text">
+            Numquam totam magni in quod voluptate perferendis rem, obcaecati
+            voluptatum labore! Debitis ducimus totam quia aperiam reprehenderit
+            illo reiciendis. Necessitatibus culpa autem, aspernatur obcaecati
+            tempore alias odio vero modi facere! Sequi, non animi. Eos eligendi
+            nesciunt praesentium ducimus tenetur porro est ullam doloremque
+            accusamus.
           </p>
         </div>
         <figure class="about-us__image">
-          <img src="kitchen.jpg" alt="about us image" />
+          <img src="images/about-us.jpg" alt="chef cooking in kitchen" />
         </figure>
       </section>
 
       <section class="specialty">
-        <h2 class="specialty-title">Shoya's Specialty</h2>
-        <p class="specialty-subtitle">スペシャリテ</p>
+        <h1 class="specialty-title">Shoya's specialty</h1>
+        <h2 class="specialty-subtitle">スペシャリテ</h2>
 
         <div class="specialty__container">
           <div class="specialty-card">
             <figure class="card-image">
-              <img src="ramen-2.jpg" alt="specialty dish" />
+              <img src="images/specialty.jpg" alt="specialty dish" />
             </figure>
             <div class="card-text">
               <h1 class="card-description">Tantan Ramen</h1>
               <p class="card-ingredients">
-                Sesame broth | Charsiu | Egg | Vegatable | Noodle
+                Sesame broth | Charsiu | Egg | Vegetable | Noodle
               </p>
               <p class="card-price">14.50€</p>
             </div>
           </div>
           <div class="specialty-card">
             <figure class="card-image">
-              <img src="ramen-2.jpg" alt="specialty dish" />
+              <img src="images/specialty.jpg" alt="specialty dish" />
             </figure>
             <div class="card-text">
               <h1 class="card-description">Shoyu Ramen</h1>
@@ -109,12 +121,12 @@
           </div>
           <div class="specialty-card">
             <figure class="card-image">
-              <img src="ramen-2.jpg" alt="specialty dish" />
+              <img src="images/specialty.jpg" alt="specialty dish" />
             </figure>
             <div class="card-text">
               <h1 class="card-description">Miso Ramen</h1>
               <p class="card-ingredients">
-                Miso-based pork broth | Charsiu | Egg | Vegatable | Noodle
+                Miso-based pork broth | Charsiu | Egg | Vegetable | Noodle
               </p>
               <p class="card-price">14€</p>
             </div>
@@ -127,10 +139,15 @@
           Get monthly offers <br />
           to your inbox
         </h2>
-        <p>Sign up for the Shoya newsletter</p>
+        <h3>Sign up for the Shoya newsletter</h3>
 
         <form class="newsletter__form">
-          <input type="text" placeholder="Enter your email address" />
+          <label for="email" class="offscreen">Email</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter your email address"
+          />
           <button>Subscribe</button>
         </form>
       </section>

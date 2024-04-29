@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/ab280b87be.js"
       crossorigin="anonymous"
@@ -14,7 +14,7 @@
     <header class="header">
       <nav class="header__nav">
         <div class="header__logo">
-          <p>🍜</p>
+          <div class="icon">🍜</div>
           <h1>Shoya Ramen</h1>
         </div>
         <ul class="header__links">
@@ -22,7 +22,11 @@
             <a href="index.html">HOME</a>
           </li>
           <li>
-            <a href="http://127.0.0.1:5500/index.html#about-us">ABOUT US</a>
+            <!-- <a href="http://127.0.0.1:5500/index.html#about-us">ABOUT US</a> -->
+            <a
+              href="https://chloeng12.github.io/imaginary-shop/index.html#about-us"
+              >ABOUT US</a
+            >
           </li>
           <li>
             <a href="menu.html">MENU</a>
@@ -35,8 +39,8 @@
     </header>
     <main class="contact-main">
       <div class="contact-heading">
-        <h1 class="contact-heading__title">Contact</h1>
-        <p class="contact-heading__subtitle">コンタクト</p>
+        <h2 class="contact-heading__title">Contact</h2>
+        <h3 class="contact-heading__subtitle">コンタクト</h3>
       </div>
       <div class="contact-info">
         <p>Address: Ratapihantie 13, 00520 Helsinki</p>
@@ -45,17 +49,17 @@
       </div>
 
       <form class="contact-form">
-        <label>First Name</label>
-        <input type="text" placeholder="First name" />
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="First name" />
 
-        <label>Last Name</label>
-        <input type="text" placeholder="Last name" />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Last name" />
 
-        <label>Email </label>
-        <input type="text" placeholder="Example@gmail.com" />
+        <label for="email">Email </label>
+        <input type="text" id="email" placeholder="Example@gmail.com" />
 
-        <label>Message</label>
-        <textarea placeholder="Send us a message"></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Send us a message"></textarea>
 
         <button class="submit-btn">Submit</button>
       </form>
